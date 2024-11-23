@@ -1,0 +1,119 @@
+.Home2Blog {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Home2Blog-heading h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .Home2Blog-heading p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .Home2Blog-boxes {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: center;
+
+  }
+  
+  .Home2Blog-box {
+    position: relative;
+    width: 400px; /* Adjust width as needed */
+    overflow: hidden;
+    border-radius: 40px;
+
+}
+
+.image-wrapper {
+
+    position: relative;
+    width: 100%;
+    height:0;
+    padding-bottom: 60%; /* Aspect ratio: 5:3 */
+  }
+  
+  .overlay-of-image {
+    position: absolute;
+  
+    bottom: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    padding:10px 20px;
+  }
+  
+
+
+  .overlay-content h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    filter: drop-shadow(1px 1px 1px black);
+  }
+  
+  .overlay-content h1 {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 800;
+    color:  #ff4500;
+    filter: drop-shadow(1px 1px 1px black);
+
+  }
+  
+  .Home2Blog-btn {
+    padding: 5px ;
+    background-color:  #df7700; /* Orange type color */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .Home2Blog-btn:hover {
+    background-color: #e63e00;
+  }
+  
+  @media (max-width: 1100px) {
+    .overlay-of-image {
+    flex-direction: column;
+    gap: 2px;
+    }
+
+  }
+  .Home2Blog-btn:hover {
+    background-color: #e63e00;
+  }
+  
+  @media (max-width: 768px) {
+    .Home2Blog-boxes{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .overlay-of-image{
+        flex-direction: row;
+    }
+    .Home2Blog-box {
+      width: 100%; /* Full-width for smaller screens */
+    }
+  }
+  @media (max-width: 400px) {
+    .overlay-of-image {
+    flex-direction: column;
+    gap: 2px;
+    }
+
+  }

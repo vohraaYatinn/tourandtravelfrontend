@@ -1,0 +1,112 @@
+
+.video-section-part {
+    background-color: white; /* Ensures white background */
+    color: black; /* Sets text color to black for readability */
+    padding: 20px;
+  }
+  
+
+.center-heading-line {
+  margin-bottom: 40px;
+}
+
+.center-heading-line h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.center-heading-line p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.scrollable-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.events-box {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-bg-box-img {
+
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay-in-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  width: 90%;
+  margin: auto;
+}
+
+.date-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.event-det-box {
+  padding: 15px;
+}
+
+.event-det-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.event-det-box h4 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  color: #777;
+  padding:5px 0px;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-info span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.price-info h4 {
+  color: #ff6f00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .center-heading-line h2 {
+    font-size: 1.5rem;
+  }
+
+  .center-heading-line p {
+    font-size: 0.9rem;
+  }
+
+  .events-box {
+    width: 100%;
+    max-width: 400px;
+  }
+}
